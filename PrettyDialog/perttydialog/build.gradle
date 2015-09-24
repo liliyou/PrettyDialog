@@ -32,8 +32,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.1'
 }
 
-def siteUrl = 'https://github.com/liliyou/CheckData'
-def gitUrl = 'https://github.com/liliyou/CheckData.git'
+def siteUrl = 'https://github.com/liliyou/PrettyDialog'
+def gitUrl = 'https://github.com/liliyou/PrettyDialog.git'
 group = "com.library.lili.checkdatalili"
 install {
     repositories.mavenInstaller {
@@ -43,7 +43,7 @@ install {
                 packaging 'aar'
 
                 // Add your description here
-                name 'A simple class for check  in common use data.'
+                name 'A simple dialog.'
                 url siteUrl
 
                 // Set your license
@@ -96,7 +96,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"  //发布到Bintray的那个仓库里，默认账户有四个库，我们这里上传到maven库
-        name = "CheckData"  //发布到Bintray上的项目名字
+        name = "prettydialog"  //发布到Bintray上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
